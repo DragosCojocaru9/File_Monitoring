@@ -20,6 +20,9 @@ Monitorizare fisiere dintr-un director folosind inotify-tools
   
   
 ----------Ziua 3----------
+
 ----------Ziua 4----------
+
 ----------Ziua 5----------
+
 ----------Ziua 6----------
