@@ -40,16 +40,18 @@ Monitorizare fisiere dintr-un director folosind inotify-tools
 
 2024-06-19 11:27:55/home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad MODIFIED
 
+ *Scriptul 'log_user_commands.sh' monitorizeaza modificarile care au log in directorul specificat si in toate subdirectoarele sale, inregistrand modificarile in fisierul de log 'user_commands.log'.
+
  *Sunt monitorizate diferite evenimente, precum crearea, stergerea, modificarea, mutarea si schimbarile de atribute ale fisierelor. Fiecare eveniment generat de inotifywait este citit si interpretat.
 
  *Sunt stocate detalii precum timestamp-ul, directorul, numele fisierului si tipul evenimentului. Scriptul exclude fisierele temporare generate de anumite aplicatii din inregistrarea modificarilor, astfel incat doar modificarile semnificative sunt inregistrate in log.
 
- *Scriptul a fost adaugat in crontab pentru a rula odata cu pornirea sistemului de operare.
+ *Scripturile au fost adaugate in crontab pentru a rula odata cu pornirea sistemului de operare.
 
  sudo nano /etc/rc.local
  
  /home/dragos/Desktop/practica/File_Monitoring/scripts/file_monitor.sh &
-
+ /home/dragos/Desktop/practica/File_Monitoring/scripts/log_user_commands.sh &
 
 ----------Ziua 4----------
 

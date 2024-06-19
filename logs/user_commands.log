@@ -1,0 +1,29 @@
+2024-06-19 12:36:52: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory//1.txt
+[2024-06-19] Event: 12:36:52 | File: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/1.txt
+[2024-06-19] Event: 12:36:52 | File: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/2.txt
+[2024-06-19] Event: 12:36:52 | File: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/3.py
+2024-06-19 12:36:52: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory//1.txt
+2024-06-19 12:36:52: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory//2.txt
+2024-06-19 12:36:52: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory//2.txt
+2024-06-19 12:36:52: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory//3.py
+2024-06-19 12:36:52: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory//3.py
+[2024-06-19] Event: 12:40:11 | File: DELETE,ISDIR /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad (copy)/dsad
+[2024-06-19] Event: 12:40:11 | File: DELETE,ISDIR /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad (copy)/dsad
+[2024-06-19] Event: 12:40:11 | File: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad (copy)/PPT Presentation (another copy).ppt
+[2024-06-19] Event: 12:40:11 | File: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad (copy)/PPT Presentation (another copy).ppt
+[2024-06-19] Event: 12:40:11 | File: DELETE,ISDIR /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad (copy)
+[2024-06-19] Event: 12:40:11 | File: DELETE,ISDIR /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad (copy)
+2024-06-19 12:40:11: (copy)/ /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad/DELETE,ISDIR dsad
+2024-06-19 12:40:11: (copy)/ /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad/DELETE,ISDIR dsad
+2024-06-19 12:40:11: (copy)/ /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad/DELETE PPT Presentation (another copy).ppt
+2024-06-19 12:40:11: (copy)/ /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad/DELETE PPT Presentation (another copy).ppt
+2024-06-19 12:40:11: DELETE,ISDIR /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory//dsad (copy)
+2024-06-19 12:40:11: DELETE,ISDIR /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory//dsad (copy)
+[2024-06-19] Event: 12:40:16 | File: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/rea/XLS Worksheet.xls
+[2024-06-19] Event: 12:40:16 | File: DELETE,ISDIR /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/rea
+[2024-06-19] Event: 12:40:16 | File: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/rea/XLS Worksheet.xls
+[2024-06-19] Event: 12:40:16 | File: DELETE,ISDIR /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/rea
+2024-06-19 12:40:16: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/rea//XLS Worksheet.xls
+2024-06-19 12:40:16: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/rea//XLS Worksheet.xls
+2024-06-19 12:40:16: DELETE,ISDIR /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory//rea
+2024-06-19 12:40:16: DELETE,ISDIR /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory//rea
