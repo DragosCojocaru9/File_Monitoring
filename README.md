@@ -30,6 +30,19 @@ Monitorizare fisiere dintr-un director folosind inotify-tools
   
 ----------Ziua 3----------
 
+ *Am adaugat directoarele logs, monitored_directory, scripts.
+ 
+ *Scriptul 'file_monitor.sh' monitorizeaza un director specificat si inregistreaza modificarile intr-un fisierul log 'file_changes.sh' in urmatorul format:
+ 
+2024-06-19 11:27:55/home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad CREATED
+
+2024-06-19 11:27:55/home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad ATTRIBUTE_CHANGED
+
+2024-06-19 11:27:55/home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad MODIFIED
+
+
+
+
 ----------Ziua 4----------
 
 ----------Ziua 5----------
