@@ -55,6 +55,43 @@ Monitorizare fisiere dintr-un director folosind inotify-tools
 
 ----------Ziua 4----------
 
+ *Logurile vor fi transmise si stocate intr-un server, simulat in Vmware pe o distributie de linux mint.
+ 
+ *Am instalat Vmware impreuna cu distributia de linux, am configurat modul bridge intrucat permite accesul direct prin ssh folosind adresa IP din reteaua locala.
+
+ Actualizarea listei de pachete
+
+sudo apt-get update
+
+ Instalarea serverul SSH
+
+sudo apt-get install openssh-server
+
+ Pornirea si activarea serviciul SSH
+
+sudo systemctl enable ssh
+
+sudo systemctl start ssh
+
+ Verificarea starii serviciului SSH
+
+sudo systemctl status ssh
+
+ Obtinerea adresei ip si conectarea la masina virtuala prin SSH
+
+ssh mint@192.168.1.100
+
+Configurarea transferului fara parola prin generarea cheii pe gazda si copierea cheii pe masina
+
+ssh-keygen -t rsa -b 2048
+
+ssh-copy-id mint@192.168.1.100
+
+ Am probat transferul fisierelor intre dispozitivul pe care se monitorizeaza directorul si masina ce simuleaza serverul.
+
+ Urmeaza analiza logurilor din server si implementarea unor mecanisme de alertare.
+
+
 ----------Ziua 5----------
 
 ----------Ziua 6----------
