@@ -1,0 +1,12 @@
+sudo setcap cap_sys_chroot=eip /home/dragos/Desktop/Practica/File_Monitoring/monitorized_directory/dsadsa
+
+sudo setcap cap_sys_admin=eip /home/dragos/Desktop/Practica/File_Monitoring/monitorized_directory/dsadsa\ \(3rd\ copy\)
+
+sudo setcap cap_dac_override=eip /home/dragos/Desktop/Practica/File_Monitoring/monitorized_directory/dsadsa\ \(4th\ copy\)
+
+sudo setcap cap_setuid=eip /home/dragos/Desktop/Practica/File_Monitoring/monitorized_directory/dsadsa\ \(5th\ copy\)
+
+sudo setcap cap_setgid=eip /home/dragos/Desktop/Practica/File_Monitoring/monitorized_directory/dsadsa\ \(6th\ copy\)
+
+sudo setcap cap_audit_write=eip /home/dragos/Desktop/Practica/File_Monitoring/monitorized_directory/dsadsa\ \(another\ copy\)
+

@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Directorul ce se doreste a fi monitorizat
-DIR_TO_WATCH="/home/dragos/Desktop/practica/File_Monitoring/monitorized_directory"
+DIR_TO_WATCH="/home/dragos/Desktop/Practica/File_Monitoring/monitorized_directory"
 
 # Fisierul de log in care se vor inregistra modificarile
-LOG_FILE="/home/dragos/Desktop/practica/File_Monitoring/logs/file_changes.log"
+LOG_FILE="/home/dragos/Desktop/Practica/File_Monitoring/logs/file_changes.log"
 
 declare -A moved_files
 

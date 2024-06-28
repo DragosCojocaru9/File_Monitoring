@@ -91,7 +91,23 @@ ssh-copy-id mint@192.168.1.100
 
  Urmeaza analiza logurilor din server si implementarea unor mecanisme de alertare.
 
+UPDATE:
+Dupa ce distributia de linux a fost corupta, am reinstalat aceeasi distributie de mint nativ si inca o distributie de mint in virtualbox pentru a simula un server la care ma conectez prin ssh (Masina virtuala este de asemenea in modul Bridged).
+
+De data aceasta am intampinat probleme la partea de conectare fara parola, deoarece nu stiam parola default de la mint pentru conectarea prin ssh (nu merge cu enter, mint sau alte variante).
+
+Pentru a solutiona problema, am creat un nou utilizator, caruia i-am setat o parola si m-am conectat cu parola.
 
 ----------Ziua 5----------
+
+Am creat un script pentru transmiterea fisierelor de log catre server, unde vor fi analizate. 
+
+Am folosit sshpass pentru a furniza parola necesarea pentru autentificare direct in linia de comanda, pentru a simplifica automatizarea.
+
+ex rulare: sshpass -p "parola" ssh utilizator@server
+
+OBS: Din punct de vedere al securitatii, sshpass este o unealta intr-o oarecare masura nesigura, intrucat contine in cadrul scriptului parola in clar, dar vom face obfuscation pe cod la finalul proiectului.
+
+Vom folosi rsync pentru a optimiza transferul de fisiere, transferand doar modificarile fisierelor, in locul fisierelor complete.
 
 ----------Ziua 6----------

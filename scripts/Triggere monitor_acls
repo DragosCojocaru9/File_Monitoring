@@ -1,0 +1,6 @@
+setfacl -m g:users:r-x /home/dragos/Desktop/Practica/File_Monitoring/monitorized_directory/dsadsa
+
+sudo chown dragos /home/dragos/Desktop/Practica/File_Monitoring/monitorized_directory/das
+
+sudo chgrp users /home/dragos/Desktop/Practica/File_Monitoring/monitorized_directory/test_file
+
