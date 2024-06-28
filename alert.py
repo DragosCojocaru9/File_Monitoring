@@ -8,7 +8,7 @@ import re
 def send_alert_email(subject, body):
     from_email = 'dragos.cojocaru@mta.ro'  # Inlocuieste cu email-ul tau
     to_email = 'dragoscojocaru6@gmail.com'
-    password = 'Licenta2023!'  # Inlocuieste cu parola ta
+    password = 'Password!'  # Inlocuieste cu parola ta
 
     msg = MIMEMultipart()
     msg['From'] = from_email
