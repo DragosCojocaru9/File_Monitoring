@@ -111,3 +111,110 @@ OBS: Din punct de vedere al securitatii, sshpass este o unealta intr-o oarecare 
 Vom folosi rsync pentru a optimiza transferul de fisiere, transferand doar modificarile fisierelor, in locul fisierelor complete.
 
 ----------Ziua 6----------
+
+
+Configurare ELK pentru analiza logurilor
+
+curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch |sudo gpg --dearmor -o /usr/share/keyrings/elastic.gpg
+
+
+echo "deb [signed-by=/usr/share/keyrings/elastic.gpg] https://artifacts.elastic.co/packages/7.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list
+
+sudo apt install elasticsearch
+
+sudo nano /etc/elasticsearch/elasticsearch.yml
+
+. . .
+# ---------------------------------- Network -----------------------------------
+#
+# Set the bind address to a specific IP (IPv4 or IPv6):
+#
+network.host: localhost
+. . .
+
+sudo systemctl start elasticsearch
+
+sudo systemctl enable elasticsearch
+
+curl -X GET "localhost:9200"
+
+output:
+{
+  "name" : "dragos",
+  "cluster_name" : "elasticsearch",
+  "cluster_uuid" : "1aQA58noTWCnRcWyW2xWwg",
+  "version" : {
+    "number" : "7.17.22",
+    "build_flavor" : "default",
+    "build_type" : "deb",
+    "build_hash" : "38e9ca2e81304a821c50862dafab089ca863944b",
+    "build_date" : "2024-06-06T07:35:17.876121680Z",
+    "build_snapshot" : false,
+    "lucene_version" : "8.11.3",
+    "minimum_wire_compatibility_version" : "6.8.0",
+    "minimum_index_compatibility_version" : "6.0.0-beta1"
+  },
+  "tagline" : "You Know, for Search"
+}
+
+sudo apt install kibana
+
+sudo systemctl enable kibana
+
+sudo systemctl start kibana
+
+echo "kibanaadmin:`openssl passwd -apr1`" | sudo tee -a /etc/nginx/htpasswd.users
+
+ /etc/nginx/htpasswd.users
+tee: /etc/nginx/htpasswd.users: No such file or directory
+Password: 
+Verifying - Password: 
+kibanaadmin:$apr1$k5clgpfa$LSjw9zInUjvBnP4bmNtn20
+
+
+sudo apt install logstash
+
+sudo nano /etc/logstash/conf.d/02-beats-input.conf
+
+input {
+  beats {
+    port => 5044
+  }
+}
+
+sudo nano /etc/logstash/conf.d/30-elasticsearch-output.conf
+
+
+output {
+  if [@metadata][pipeline] {
+	elasticsearch {
+  	hosts => ["localhost:9200"]
+  	manage_template => false
+  	index => "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
+  	pipeline => "%{[@metadata][pipeline]}"
+	}
+  } else {
+	elasticsearch {
+  	hosts => ["localhost:9200"]
+  	manage_template => false
+  	index => "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
+	}
+  }
+}
+
+sudo systemctl start logstash
+
+sudo systemctl enable logstash
+
+
+Am adaugat in crontab toate scripturile
+
+@reboot /bin/bash /home/dragos/Desktop/Practica/File_Monitoring/scripts/file_monitor.sh
+@reboot /bin/bash /home/dragos/Desktop/Practica/File_Monitoring/scripts/log_user_commands.sh
+@reboot /bin/bash /home/dragos/Desktop/Practica/File_Monitoring/scripts/monitor_acls.sh
+@reboot /bin/bash /home/dragos/Desktop/Practica/File_Monitoring/scripts/monitor_capabilities.sh
+
+
+
+
+
