@@ -7,9 +7,14 @@
 2024-06-19 12:36:52: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory//2.txt
 2024-06-19 12:36:52: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory//3.py
 2024-06-19 12:36:52: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory//3.py
+[2024-06-28] Command executed: rm -rf /home/dragos/Desktop/Practica/File_Monitoring/monitorized_directory/
+[2024-06-28] Command executed: rm -rf /home/dragos/Desktop/Practica/File_Monitoring/monitorized_directory/
 [2024-06-19] Event: 12:40:11 | File: DELETE,ISDIR /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad (copy)/dsad
 [2024-06-19] Event: 12:40:11 | File: DELETE,ISDIR /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad (copy)/dsad
 [2024-06-19] Event: 12:40:11 | File: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad (copy)/PPT Presentation (another copy).ppt
+[2024-06-28] Command executed: rm -rf /home/dragos/Desktop/Practica/File_Monitoring/monitorized_directory/
+[2024-06-28] Command executed: rm -rf /home/dragos/Desktop/Practica/File_Monitoring/monitorized_directory/
+[2024-06-28] Command executed: rm -rf /home/dragos/Desktop/Practica/File_Monitoring/monitorized_directory/
 [2024-06-19] Event: 12:40:11 | File: DELETE /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad (copy)/PPT Presentation (another copy).ppt
 [2024-06-19] Event: 12:40:11 | File: DELETE,ISDIR /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad (copy)
 [2024-06-19] Event: 12:40:11 | File: DELETE,ISDIR /home/dragos/Desktop/practica/File_Monitoring/monitorized_directory/dsad (copy)
